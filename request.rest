@@ -1,0 +1,3 @@
+GET http://localhost:8080/all
+# GET http://localhost:8080/all?page=1&limit=8
+# test file for get and post using visual studio code rest client plugin

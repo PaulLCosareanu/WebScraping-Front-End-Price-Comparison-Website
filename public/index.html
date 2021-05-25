@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/common.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Web Scraping Demo</title>
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="searchIcon" id="searchMenu" >
+                <!-- method which triggers animation -->
+                <div class="iconContainer" onclick="searchMenu()">
+                    <i class="fa fa-search" id="icon"></i>
+                </div>
+                <div class="searchBar" id="searchBar">
+                    <!-- on click the method of returning elements by search input is triggered -->
+                    <input class="search" id="search" type="text"><button type="button" onclick="searchInput(1,8)"><i class="fa fa-search"></i></button>
+                    <select name="category" id="category">
+                        <option value="Search by Brand">Volvo</option>
+                        <option value="Search by producer">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                </div>
+                <div class="productsContainer" id="productsContainer">
+                    <div class="products">
+                        <div class="announcement" id="announcement">
+                            <h1>^ Please search for a product ^ {</h1>
+                               <h3> In order to succesfully display a product, you need to search for it.</h3>
+                            <h1>}</h1>
+                        </div>
+                        <div class="titleProducts" id="titleProducts"><h2>Please select a product:</h2></div>
+                       <!-- products displayed here (server response) -->
+                        <div class="productsLeft" id="products">
+                            
+                            
+
+                        </div>
+                          
+                    </div>
+                   
+                    
+                </div>
+                
+            </div>
+            <div class="logo">
+                <h1>This website </h1>
+                <h1 class="typing"> </h1>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="title">
+                <h2>What is Web Scraping? {</h2>
+
+            </div>
+            <div class="text">
+                <h3>Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites.</h3><h3> Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol, or through a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. </h3><h3>It is a form of copying, in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis.</h3>
+                
+            </div>
+            <div class="titleEnd">
+                <h2 class="animationTitle"> } </h2>
+            </div>
+        </div>
+        <div class="parallax1">
+
+        </div>
+        <div class="container2">
+            <div class="title">
+                <h2>&ltdiv class="Focus of the Website &gt</h2>
+
+            </div>
+            <div class="text">
+                <h3>This Website has been developed as a coursework for Advanced Web Development with Big Data, at Middlesex Unversity.</h3>
+                <h3>The main ideea of the website is to succesfully "scrape" data from 5 or more different websites and succesfully post them within a page which has pagination.</h3>
+                <h3>Once the desired product is found, If you would click the Go to Website button, it will automatically send you to the respective owner of the add.</h3>
+                <h3>The scraper is developed using Java, including Maven, Spring and Hybernate, the data gathered is saved in a SQL or NoSql Database, and data should then be displayed on the website with the help of Node.js, Javascript, Ajax.</h3>
+            </div>
+            <div class="titleEnd">
+                <h2 class="animationTitle">&lt /div &gt </h2>
+            </div>
+        </div>
+        <div class="parallax2"></div>
+        <div class="container2">
+            <div class="title">
+                <h2>&lt h1 &gtDeadline: &lt /h1&gt</h2>
+
+            </div>
+            <div class="text">
+                <h3>&lth3&gt One of the most important aspects of the project is the deadline, which is as following:&lt/h3&gt</h3>
+                <ul>
+                    <li>&ltul&gt</li>
+                    <li><br>&ltli&gtStart Date: 28.09.2020&lt/li&gt</li>
+                    <li>&ltli&gtEnd Date: 11.12.2020&lt/li&gt</li>
+                    <li><br>&lt/ul&gt</li>
+                </ul>
+            </div>
+            <div class="titleEnd">
+                <h2 class="animationTitle">&ltbr&gt </h2>
+            </div>
+        </div>
+        <div class="parallax3"></div>
+        <div class="container2">
+            <div class="title">
+                <h2>&ltdiv class="Challenges"&gt</h2>
+
+            </div>
+            <div class="text">
+                <h3>&lth3&gt When it comes to challenges, this year it's a bit different, we will combine the old with the new.&lt/h3&gt</h3>
+                <h3>&lth3&gtIt will be a challenge to combine the Java that we learned in the 1st year, with Node.js, javascript, vue, NoSql, SQL, HTML, CSS, PHP that we learned in the second year, and technologies such as Maven, Hybernate and Spring which we will learn this year.&lt/h3&gt</h3>
+            </div>
+            <div class="titleEnd">
+                <h2 class="animationTitle">&lt/div&gt </h2>
+            </div>
+        </div>
+        <div class="footer"></div>
+
+        <script src="JavaScript/text.js"></script>
+        <script src="./JavaScript/searchButton.js"></script>
+        <script src="./JavaScript/displayProducts.js"></script>
+    </body>
+</html>

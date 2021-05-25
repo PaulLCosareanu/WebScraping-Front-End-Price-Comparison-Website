@@ -1,0 +1,331 @@
+@font-face{
+    font-family: 'myFirstFont';
+    src: url("../Fonts/Retro\ Gaming.ttf") format('truetype');
+}
+body{
+    margin:0 auto;
+    font-family:'myFirstFont';
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://www.mybaggage.com/shipping/wp-content/uploads/2016/01/MU_LDN_partner_2col-c.jpg');   
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    height:90vh;
+    display:flex;
+    justify-content: left;
+    align-items: flex-end;
+    position: relative;
+}
+.typing{
+    color:white;
+    margin-left: 4px;
+    
+}
+.typing::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:5%;
+    border-right:15px solid white;
+    animation: blink 0.5s infinite;
+}
+.logo{
+    display: flex;
+    margin-left: 15%;
+}
+.logo h1{
+    color:white;
+}
+
+.text{
+    margin-left:20%;
+    margin-right:15%;
+    margin-bottom: 2%;
+    
+    
+}
+.text li{
+    list-style: none;
+}
+.title{
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top:2%;
+    color: #6495ED;
+}
+.titleEnd{
+    color:#6495ED;
+    margin-left:15%;
+    width:fit-content;
+    margin-right:0;
+    margin-bottom: 2%;
+}
+.animationTitle::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:4%;
+    border-right:15px solid #6495ED;
+    animation: blink 0.5s infinite;
+    
+}
+.parallax1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+     url('https://www.webharvy.com/images/web%20scraping.png');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    height:40vh;
+
+}
+.parallax2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+     url('https://html-scraper.info/images/Use-CURL-to-get-cookie-value-and-set-cookie-value-353187');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    height:40vh;
+
+}
+.parallax3{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://www.mozenda.com/wp-content/uploads/2018/10/blog-banner-1.jpg');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    height:40vh;
+
+}
+.searchIcon{
+    position: fixed;
+    right:0%;
+    top: 5%;
+    width: 10vh;
+    height: 10vh;
+    background-color:#6495ED ;
+    border-radius: 20px;
+    z-index: 999;
+    transition: ease-in 1s;
+    
+}
+.iconContainer{
+    position: absolute;
+    width: 10vh;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right:0%;
+    top:0%;
+    
+}
+.fa.fa-search{
+    font-size:2em;
+    color: white;
+}
+.fa.fa-window-close{
+    font-size:2em;
+    color: white;
+}
+.extendedMenu{
+    width:100%;
+    height:100%;
+    transition: 1s ease-in;
+    top:0%;
+    /* background-color: lightgrey; */
+}
+.searchBar{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    top:5%;
+    height:100px;
+    transition: 1s;
+    width:0px;
+    transition-delay: 1s;
+    transition: ease-in 1s;
+    
+}
+.searchBar button{
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    outline-style: none;
+}
+.search{
+    border:none;
+    border-radius: 10px;
+    width:0%;
+    height:2em;
+    outline-style: none;
+    transition-delay: 1s;
+    transition: ease-in 1s;
+    
+   
+}
+.activeFlex{
+    
+    width:100%;  
+    opacity: 1;
+    transition: ease-in 1s;
+    transition-delay: 1s;
+}
+
+.activeSearch{
+    width:70%;
+    transition-delay: 1s;
+    transition: ease-in 1s;
+}
+
+.announcement{
+    display:none;
+    /* display:flex; */
+    justify-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-wrap: wrap;
+}
+.announcement h3{
+    margin-left: 15%;
+}
+.announcement h1{
+    color:white;
+}
+.products{
+    min-height:500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.productsLeft{
+    background-color: white;
+    /* margin-left: 15%; */
+    width:100%;
+    height:fit-content;
+    display:none;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* margin-right: 1px solid lightgrey; */
+    /* min-width: 50%; */
+    flex-wrap: wrap;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border-radius: 10px; */
+    overflow: scroll;
+}
+.titleProducts{
+    color: white;
+    display: none;
+}
+@media only screen and (min-height:800px){
+    .productsLeft{
+        max-height:750px;
+    }
+
+}
+@media only screen and (max-height:799px) and (min-height:500px){
+    .productsLeft{
+        max-height:450px;
+    }
+
+}
+@media only screen and (max-height:499px) and(min-height:300px){
+    .productsLeft{
+        max-height:250px;
+    }
+
+}
+
+/* .productsRight{
+    background-color: white;
+    /* margin-right: 15%; */
+    /* width:35%;
+    height:fit-content;
+    min-width:50%; */
+/* } */ 
+.product{
+    /* min-width:500px; */
+    max-width:300px;
+    /* min-width:90%; */
+    background-color: white;
+    /* display: flex; */
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top:40px;
+}
+.productImage{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* height:auto; */
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+    /* border-bottom: 1px solid black; */
+    margin-right: 5%;
+}
+.productDescription{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.toWebsite button{
+    border:none;
+    border-style: none;
+    outline-style: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: myFirstFont;
+}
+.productImage img{
+    max-width: 90%;
+}
+
+.pagination {
+    display: inline-block;
+    width:100%;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+   
+
+  }
+.showText{
+    display:flex;
+}
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+
+
+}
